@@ -97,48 +97,136 @@ main{
 
 .card {
   max-width: 100%;
+  min-height:300px;
 }
-
+.card div {
+    min-height:50px;
+  }
 footer {
   width: 100%;
   max-height: 30px;
 
 }
-.footer-nav h2 {
-  font-size:.75rem;
-  float:left;
-  margin-top:0%;
-  margin-left:1%;
-}
+
 .footer-nav .nav{
 border-top:1px solid gray;
 }
+.footer-nav h2 {
+    font-size:.75rem;
+    font-weight: 900;
+    float:left;
+    margin-top:1%;
+    margin-left:1%;
+}
 .footer-nav .nav a{
   float:right;
-  font-size:.5rem;
+  font-size:.65rem;
   padding:1%;
 }
-/* Styles for larger screens */
-@media screen and (min-width: 720px) {
-  
-  .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
-      max-width: 1200px;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      margin: 0 auto;
-  }
 
+
+
+/* Styles for larger screens */
+@media screen and (min-width: 768px) {
   header {
-    min-height: 470px;
+    text-align: left;
+    overflow: hidden;
+    padding-top: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  header {
+    min-height: 325px;
+  }
+  header .profile-image {
+    float:right;  
+    max-width:90%;
+  }
+  .nav .name {
+    margin-bottom: 2%;
+}
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+  .nav .nav-link {
+    background:#fafafa;
+    display:inline;
+    margin:1%;
+  }
+  .card .thumbnail{
+    width:100%;
+    margin-bottom:5%;
+  }
+  .card {
+    max-width: 48%;
+    min-height:450px;
+
+    display: inline-block;
+    padding: 1%;
+    overflow:auto;
+  }
+  .card div {
+    min-height:50px;
+    max-width:95%;
+  }
+  header p {
+    padding:0%;
+    padding-right: 55%;
+    margin: 0%;
+  }
+  main {
+    padding-top: 20px;
+  }
+  main p {
+    line-height: 1.6em;
+    padding:0%;
+  }
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+  .footer-nav h2 {
+    font-size:1rem;
+    float:left;
+    margin-top:1%;
+    margin-left:1%;
+  }
+  .footer-nav .nav a{
+  float:right;
+  font-size:.75rem;
+  padding:1%;
+  }
+  footer p {
+    padding:1%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+  header {
+    min-height: 325px;
+  }
+  .nav .name {
+    display: inline;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+    margin-right: 45%;
   }
 
   .nav {
     max-width: 1200px;
     padding: 0 30px;
   }
-
+  .nav .nav-link {
+    background:#fafafa;
+    display:inline;
+    margin:1%;
+  }
 
   main {
     padding-top: 20px;
@@ -148,12 +236,35 @@ border-top:1px solid gray;
   main p {
     line-height: 1.6em;
   }
-
+  header p {
+    padding:0%;
+    padding-right: 55%;
+    margin: 0%;
+  }
+  .card {
+    max-width: 31%;
+    min-height:350px;
+    display: inline-block;
+    padding: 1%;
+    overflow:auto;
+  }
+  .card div {
+    min-height:50px;
+  }
 
   footer {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
   }
+  .nav a {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: #3d3d3d;
+    margin: 0%;
+}
 
 }
