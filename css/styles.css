@@ -2,84 +2,118 @@
 * { 
   box-sizing: border-box;
 }
-  
 body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #3d3d3d;
-  background: #fafafa;
+  background: #757575;
   margin:0%;
 }
-/* Link and Font Styles */
-
-a {
-  text-decoration: none;
-  color: #3d3d3d;
-}
-a:hover {
-  color: #3d3d3d;
-}
-p {
-  color:gray;
-  padding:5%;
-
-}
-
-h1 {
-  font-weight: 400;
-  font-size:1.5rem;
-  margin:3%;
-}
-h2 {
-  font-weight: 700;
-  font-size:1.10rem;
-}
-/* Section Styles */
 #wrapper{
   width:100%;
 }
+
+/* Link and Font styling */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  color: #3d3d3d;
+  transition: all .75s;
+}
+p {
+  color:#fff;
+}
+h1{
+  font-family: 'Oswald', sans-serif;
+  color:#fff;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+h2 {
+  font-family: 'Oswald', sans-serif;
+  color:#fff;
+  font-weight: 700;
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  margin: 3%;
+  text-decoration: underline;
+}
+
+.footer-nav h2 {
+    font-size: 1rem;
+    font-weight: 900;
+    float: left;
+    margin-left: 1%;
+}
+.footer-nav ul li a{
+display: none;
+}
+.footer-nav ul .back-to-top a{
+  display: block;
+  float: right;
+  font-size: 0.9rem;
+  padding-right: 3%;
+  margin-top: -1.5%;
+}
+div ul{
+  padding-left:0%;
+}
+div ul li{
+  line-height:1.5em;
+  font-size:1.25em;
+  margin-left:0%;
+  list-style:none;
+}
+/*Header and Nav styling */
 .main-nav {
   width: 100%;
-  background: #fafafa;
+  background: #757575;
   text-align: center;
-  padding-left:2%;
-  padding-right:2%;
+  padding: 2%;
 }
 nav ul{
   font-weight: 900;
   list-style-type: none;
-  padding-left:0%;
+  margin-top: 3%;
 }
 .nav{
   list-style: none;
   padding:0%;
 }
-.nav .name {
-    display: block;
-    font-size:1.5rem;
+.name {
+  display: block;
+  color: #fff;
+  font-size:1.5rem;
 }
 .nav .nav-link {
-  background:#ffffff;
+  background:#585858;
   margin:1%;
-  padding:1%;
 }
 .nav-link:hover{
   background: #fafafa;
+  transition: all .75s;
 }
 .nav a {
   font-size:1.10rem;
+  padding:2% 34%;
 }
 .nav a:hover {
-  color: grey;
+  color:#3d3d3d;
+  transition: all .75s;
 }
-
 header {
   text-align: center;
   overflow: hidden;
   padding-top: 25px;
   margin-left: 5%;
   margin-right: 5%;
-
 }
 header {
   line-height: 1.5;
@@ -88,49 +122,45 @@ header .profile-image {
   display:inline;
   max-width:90%;
 }
+
+/*Main content styling*/
 main{
-  background: #fff;
-  width:100%;
-  padding-top:5%;
+  background: #585858;
+  width: 100%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 .card .thumbnail{
+  margin-top:5%;
   width:90%;
-  margin-bottom:5%;
 }
-
 .card {
-  max-width: 100%;
-  min-height:300px;
+  width: 95%;
+  min-height: 300px;
+  margin: 2.5%;
+  border: 5px solid #757575;
+  background: #ededed;
 }
 .card div {
-    min-height:50px;
-  }
+  min-height: 50px;
+  margin:2.5%;
+}
+.card p{
+  line-height: 1.25em;
+  color: #3d3d3d;
+}
+/*Footer and bottom Nav styling*/
 footer {
   width: 100%;
-  max-height: 30px;
-
+  max-height: 300px;
 }
-
-.footer-nav nav{
-border-top:1px solid gray;
+.footer-nav {
+border-top: 1px solid gray;
 }
-.footer-nav h2 {
-    font-size:.75rem;
-    font-weight: 900;
-    float:left;
-    margin-top:2%;
-    margin-left:1%;
-}
-.footer-nav ul li a{
-  float:right;
-  font-size:.65em;
-  padding-right:2%;
-}
-
-
 
 /* Styles for larger screens */
 @media screen and (min-width: 768px) {
+  /*Header and Nav restyling*/
   header {
     text-align: left;
     overflow: hidden;
@@ -149,22 +179,32 @@ border-top:1px solid gray;
     margin-bottom: 2%;
 }
   .nav {
-    max-width: 1200px;
+    min-width: 375px;
     padding: 0 30px;
   }
   .nav .nav-link {
-    background:#fafafa;
+    background:#757575;
     display:inline;
     margin:1%;
+  } 
+  .nav a {
+  font-size:1.10rem;
+  padding:0%;
+}
+  header p {
+    padding:0%;
+    padding-right: 55%;
+    margin: 0%;
   }
+  /*Main content restyling*/
   .card .thumbnail{
     width:100%;
     margin-bottom:5%;
   }
   .card {
-    max-width: 48%;
+    width: 44%;
     min-height:450px;
-
+    margin:1%;
     display: inline-block;
     padding: 1%;
     overflow:auto;
@@ -173,31 +213,24 @@ border-top:1px solid gray;
     min-height:50px;
     max-width:95%;
   }
-  header p {
-    padding:0%;
-    padding-right: 55%;
-    margin: 0%;
-  }
   main {
     padding-top: 20px;
   }
-  main p {
-    line-height: 1.6em;
-    padding:0%;
-  }
+  /*Footer and bottom Nav restyling*/
   footer {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
   }
-  .footer-nav h2 {
-    font-size:1rem;
-    float:left;
-  }
-  .footer-nav .nav a{
+  .footer-nav ul li a{
+  display:block;
   float:right;
-  font-size:.75rem;
-  padding:1%;
+  font-size:0.9rem;
+  padding-right:1.5%;
+  margin-top: -1%;
+  }
+  .footer-nav ul .back-to-top a{
+    display:none;
   }
   footer p {
     padding:1%;
@@ -207,43 +240,46 @@ border-top:1px solid gray;
 }
 
 
-
+/*Styles for desktop screens and larger tablets.*/
 @media screen and (min-width: 1024px) {
+  /*Link and Text restyling*/
+  .nav a {
+    font-size: 1rem;
+  }
+  .nav a {
+    text-decoration: none;
+    margin: -1%;
+  }
+  .footer-nav a {
+    text-decoration: none;
+    margin: 0%;
+  }
+  /*Header and Nav restyling*/
   header {
     min-height: 325px;
   }
-  .nav .name {
-    display: inline;
+  .name {
+    display:inline-block;
     font-size: 1.5rem;
     margin-bottom: 2%;
     margin-right: 45%;
   }
-
   .nav {
-    max-width: 1200px;
+    display:inline-block;
+    min-width: 375px;
     padding: 0 30px;
   }
   .nav .nav-link {
-    background:#fafafa;
+    background:#757575;
     display:inline;
     margin:1%;
   }
-
+  /*Main content restyling*/
   main {
     padding-top: 20px;
-
-  }
-
-  main p {
-    line-height: 1.6em;
-  }
-  header p {
-    padding:0%;
-    padding-right: 55%;
-    margin: 0%;
   }
   .card {
-    max-width: 31%;
+    width: 28%;
     min-height:350px;
     display: inline-block;
     padding: 1%;
@@ -252,20 +288,12 @@ border-top:1px solid gray;
   .card div {
     min-height:50px;
   }
-
+  /*Footer restyling*/
   footer {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
   }
-  .nav a {
-    font-size: 1rem;
-}
-
-a {
-    text-decoration: none;
-    color: #3d3d3d;
-    margin: 0%;
-}
+  
 
 }
