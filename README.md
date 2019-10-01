@@ -1,7 +1,7 @@
 # Information regarding this project repository
 
 ## Goals
-  The goal of this project is to display a solid understanding of how utilize CSS3 media queries to implement a mobile first responsive web page that is ready for devices and viewports of various sizes. Furthermore display an understanding of how to alter the layout to accomadate the appropriate content. This project provided a mock up for three screen sizes, mobile and tablet and desktop devices to be matched.
+  The goal of this project is to display a solid understanding of how utilize CSS3 media queries to implement a mobile first responsive web page that is ready for devices and viewports of various sizes. Furthermore display an understanding of how to alter the layout to accommodate the appropriate content. This project provided a mock up for three screen sizes, mobile and tablet and desktop devices to be matched.
 
 ## Languages
   1. HTML5
