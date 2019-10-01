@@ -1,41 +1,39 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   color: #3d3d3d;
   background: #757575;
   margin:0%;
-}
-  
-#wrapper{
   width:100%;
 }
+
   /* Link and Font styling */
 a {
   text-decoration: none;
   color: #fff;
 }
-  
+
 a:hover {
   color: #3d3d3d;
   transition: all .75s;
 }
-  
+
 p {
   color:#fff;
 }
-  
+
 h1{
   font-family: 'Oswald', sans-serif;
   color:#fff;
   font-weight: 700;
   font-size: 1.75rem;
 }
-  
+
 h2 {
   font-family: 'Oswald', sans-serif;
   color:#fff;
@@ -55,11 +53,11 @@ h2 {
     float: left;
     margin-left: 1%;
 }
-  
+
 .footer-nav ul li a{
 display: none;
 }
-  
+
 .footer-nav ul .back-to-top a{
   display: block;
   float: right;
@@ -67,18 +65,18 @@ display: none;
   padding-right: 3%;
   margin-top: -1.5%;
 }
-  
+
 div ul{
   padding-left:0%;
 }
-  
+
 div ul li{
   line-height:1.5em;
   font-size:1.25em;
   margin-left:0%;
   list-style:none;
 }
-  
+
 /*Header and Nav styling */
 .main-nav {
   width: 100%;
@@ -86,44 +84,44 @@ div ul li{
   text-align: center;
   padding: 2%;
 }
-  
+
 nav ul{
   font-weight: 900;
   list-style-type: none;
   margin-top: 3%;
 }
-  
+
 .nav{
   list-style: none;
   padding:0%;
 }
-  
+
 .name {
   display: block;
   color: #fff;
   font-size:1.5rem;
 }
-  
+
 .nav .nav-link {
   background:#585858;
   margin:1%;
 }
-  
+
 .nav-link:hover{
   background: #fafafa;
   transition: all .75s;
 }
-  
+
 .nav a {
   font-size:1.10rem;
   padding:2% 34%;
 }
-  
+
 .nav a:hover {
   color:#3d3d3d;
   transition: all .75s;
 }
-  
+
 header {
   text-align: center;
   overflow: hidden;
@@ -131,11 +129,11 @@ header {
   margin-left: 5%;
   margin-right: 5%;
 }
-  
+
 header {
   line-height: 1.5;
 }
-  
+
 header .profile-image {
   display:inline;
   max-width:90%;
@@ -147,12 +145,12 @@ main{
   padding-top: 5%;
   padding-bottom: 5%;
 }
-  
+
 .card .thumbnail{
   margin-top:5%;
   width:90%;
 }
-  
+
 .card {
   width: 95%;
   min-height: 300px;
@@ -160,23 +158,23 @@ main{
   border: 5px solid #757575;
   background: #ededed;
 }
-  
+
 .card div {
   min-height: 50px;
   margin:2.5%;
 }
-  
+
 .card p{
   line-height: 1.25em;
   color: #3d3d3d;
 }
-  
+
 /*Footer and bottom Nav styling*/
 footer {
   width: 100%;
   max-height: 300px;
 }
-  
+
 .footer-nav {
 border-top: 1px solid gray;
 }
@@ -190,48 +188,48 @@ border-top: 1px solid gray;
     margin-left: 5%;
     margin-right: 5%;
   }
-    
+
   header {
     min-height: 325px;
   }
 
   header .profile-image {
-    float:right;  
+    float:right;
     max-width:90%;
   }
-  
+
   .nav .name {
     margin-bottom: 2%;
 }
-  
+
   .nav {
     min-width: 375px;
     padding: 0 30px;
   }
-  
+
   .nav .nav-link {
     background:#757575;
     display:inline;
     margin:1%;
   }
-  
+
   .nav a {
   font-size:1.10rem;
   padding:0%;
 }
-  
+
   header p {
     padding:0%;
     padding-right: 55%;
     margin: 0%;
   }
-  
+
   /*Main content restyling*/
   .card .thumbnail{
     width:100%;
     margin-bottom:5%;
   }
-  
+
   .card {
     width: 44%;
     min-height:450px;
@@ -240,23 +238,23 @@ border-top: 1px solid gray;
     padding: 1%;
     overflow:auto;
   }
-  
+
   .card div {
     min-height:50px;
     max-width:95%;
   }
-  
+
   main {
     padding-top: 20px;
   }
-  
+
   /*Footer and bottom Nav restyling*/
   footer {
     font-size: 1.3em;
     max-width: 1200px;
     margin: 40px auto;
   }
-  
+
   .footer-nav ul li a{
   display:block;
   float:right;
@@ -264,79 +262,78 @@ border-top: 1px solid gray;
   padding-right:1.5%;
   margin-top: -1%;
   }
-  
+
   .footer-nav ul .back-to-top a{
     display:none;
   }
-  
+
   footer p {
     padding:1%;
     padding-left: 10%;
     padding-right: 10%;
   }
-  
+
 }
-  
+
 /*Styles for desktop screens and larger tablets.*/
 @media screen and (min-width: 1024px) {
   /*Link and Text restyling*/
   .nav a {
     font-size: 1rem;
   }
-  
+
   .nav a {
     text-decoration: none;
     margin: -1%;
     margin-left:2.5%;
   }
-  
+
   .footer-nav a {
     text-decoration: none;
     margin: 0%;
   }
-  
+
   /*Header and Nav restyling*/
   header {
     min-height: 325px;
   }
-  
+
   .name {
     display:inline-block;
     font-size: 1.5rem;
     margin-bottom: 2%;
     margin-right: 45%;
   }
-  
+
   .nav {
     display:inline-block;
     min-width: 375px;
     padding: 0 30px;
   }
-  
+
   .nav .nav-link {
     background:#757575;
     display:inline;
     margin:1%;
   }
-  
+
   /*Main content restyling*/
   main {
     padding-top: 20px;
   }
-  
+
   .card {
     width: 28%;
     min-height:350px;
-    display: inline-block;
     padding: 1%;
     overflow:auto;
   }
-  
+
   .card div {
     min-height:70px;
     max-height: 70px;
   }
-  
+
   /*Footer restyling*/
   footer {
     font-size: 1.3em;
@@ -345,4 +342,3 @@ border-top: 1px solid gray;
   }
 
 }
-  
